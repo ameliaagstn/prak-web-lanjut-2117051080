@@ -7,11 +7,8 @@
     <title>Profile</title>
 </head>
 <body>
-    <center><img src = "
-        <?php 
-            echo base_url('./img/amel.jpg'); 
-        ?> " 
-        width="250px">
+    <center><img src = "<?= $user['foto'] ?? base_url('assets/uploads/img/') ?>" 
+        width="100%" heigth=100% alt=" ">
     </center>
 
     <center>
@@ -19,23 +16,25 @@
             <tr>
                 <td>Nama</td>
                 <td>:</td>
-                <td><?=$nama ?></td>
+                <td><?=$user ['nama'] ?></td>
             </tr>
             <tr>
                 <td>Kelas</td>
                 <td>:</td>
-                <td><?=$kelas ?></td>
+                <td><?=$user ['nama_kelas'] ?></td>
             </tr>        
             <tr>
                 <td>NPM</td>
                 <td>:</td>
-                <td><?=$npm ?></td>
+                <td><?=$user ['npm'] ?></td>
             </tr>
         </table>
     </center>
     <!-- Nama    : Amelia Agustina Nainggolan<br>
     Kelas   : B<br>
     NPM     : 2117051080 -->
+
+
 </body>
 
 </html>
